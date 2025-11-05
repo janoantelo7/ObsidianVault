@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "098a63d882bf9d41",
+    "type": "split",
+    "children": [
+      {
+        "id": "e9669347a4720720",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f878e06114f47a09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Apuntes/Kubernetes/01 - Introducción.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01 - Introducción"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7e865d59aaebdda0",
+    "type": "split",
+    "children": [
+      {
+        "id": "38a3ef95918175b0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7d1790424c270f02",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "815339e3d1e20301",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "e9aa714bde75e11f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "f0262f24914d95c9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 282.5
+  },
+  "right": {
+    "id": "6a94678b65f01986",
+    "type": "split",
+    "children": [
+      {
+        "id": "d0580f05d9b1d848",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "97f888cff1f09915",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes"
+            }
+          },
+          {
+            "id": "0bcbe8208c6e468a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Apuntes/Ansible/02 - Básico de playbooks.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de 02 - Básico de playbooks"
+            }
+          },
+          {
+            "id": "c2902360639e318b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Apuntes/Kubernetes/01 - Introducción.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de 01 - Introducción"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 308.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Crear nueva base": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "f878e06114f47a09",
+  "lastOpenFiles": [
+    "Apuntes/Kubernetes/00 - Cheat Sheet.md",
+    "Apuntes/Programación/Python/01 - Fundamentos/02 - Estructuras de control.md",
+    "Apuntes/Programación/Python/01 - Fundamentos/03 - Tipos estructurados.md",
+    "Apuntes/Intelixencia Artificial/Sistemas de Aprendizaxe Automática/00 - Introducción.md",
+    "Apuntes/Sistemas Operativos/Linux/00 - Cheat Sheet.md",
+    "Apuntes/Sistemas Operativos/Linux/04 - Compresión de ficheros.md",
+    "Apuntes/Sistemas Operativos/Linux/07 - Seguridad.md",
+    "Apuntes/Servicios/Apache/01 - Introducción.md",
+    "Apuntes/Servicios/Bases de datos/MySQL/00 - Cheat sheet.md",
+    "Apuntes/Servicios/Bases de datos/MySQL/01 - Introducción a SQL.md",
+    "Apuntes/Sistemas Operativos/Linux/03 - Scripting con Bash.md",
+    "Apuntes/Servicios/Bases de datos/MySQL/02 - Sentencias básicas SQL.md",
+    "Apuntes/Programación/Python/01 - Fundamentos/04 - Funcións.md",
+    "Apuntes/Programación/Python/01 - Fundamentos/01 - Datos e operadores.md",
+    "Apuntes/Sistemas Operativos/Linux/02 - Sistema de ficheros.md",
+    "Apuntes/Programación/Python/02 - Python para sysadmins.md",
+    "Apuntes/Programación/Python/03 - Programación Orientada a Objetos.md",
+    "Apuntes/Servicios/Bases de datos/Mongodb/01 - Introducción.md",
+    "Apuntes/Servicios/Apache/02 - VirtualHost.md",
+    "Sin título.md",
+    "Apuntes/Programación/Python/01 - Fundamentos",
+    "Apuntes/Docker/05 - Networking.md",
+    "Apuntes/Docker/04 - Docker Compose.md",
+    "Apuntes/Docker/02 - Docker Imágenes.md",
+    "Apuntes/Programación/Python/05 - Creando paquetes de Python.md",
+    "Apuntes/Programación/Python/04 - Pandas.md",
+    "Apuntes/Programación/Go/01 - Introducción a Go.md",
+    "Clippings",
+    "Apuntes/Intelixencia Artificial/Modelos de IA/01 - Tipos de intelixencias artificiais. Escolas e clasificacions.md~",
+    "Apuntes/Intelixencia Artificial/Modelos de IA/4913",
+    "Apuntes/Servicios/Cloud/Azure/01 - Administración de Azure",
+    "Apuntes/Servicios/Cloud/Azure/02 - Azure Compute Resources",
+    "Apuntes/Kubernetes/adjuntos/Pasted image 20250925195806.png",
+    "Apuntes/Kubernetes/adjuntos",
+    "Apuntes/00-Recursos/Pasted image 20240820095308.png",
+    "Apuntes/00-Recursos",
+    "Apuntes/Inteligencia Artificial/Sistemas de Aprendizaje Automática/adjuntos/Pasted image 20250919232610.png",
+    "Apuntes/Inteligencia Artificial/Sistemas de Aprendizaje Automática/adjuntos/Pasted image 20250919233643.png",
+    "Apuntes/Inteligencia Artificial/Sistemas de Aprendizaje Automática/adjuntos",
+    "Apuntes/Sistemas Operativos",
+    "Sin título.canvas",
+    "Apuntes/Servicios/Cloud/Azure/adjuntos/Pasted image 20250807115824.png",
+    "Apuntes/Servicios/Cloud/Azure/AZ-104/adjuntos/Pasted image 20250603112954.png",
+    "Apuntes/Servicios/Cloud/Azure/AZ-104/adjuntos/Pasted image 20250529090905.png",
+    "Apuntes/Servicios/Cloud/Azure/AZ-104/adjuntos/Pasted image 20250529091914.png",
+    "Apuntes/Servicios/Cloud/Azure/AZ-104/adjuntos/Pasted image 20250529090517.png"
+  ]
+}

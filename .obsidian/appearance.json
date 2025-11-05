@@ -1,0 +1,11 @@
+{
+  "theme": "system",
+  "cssTheme": "Minimal",
+  "enabledCssSnippets": [
+    "mermaid"
+  ],
+  "showRibbon": true,
+  "showViewHeader": true,
+  "nativeMenus": false,
+  "baseFontSize": 16
+}
