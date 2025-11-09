@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Apuntes/Kubernetes/01 - Introducción.md",
+                "file": "Apuntes/Intelixencia Artificial/Sistemas de Aprendizaxe Automática/00 - Introducción.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Introducción"
+              "title": "00 - Introducción"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Apuntes/Kubernetes/01 - Introducción.md",
+                "file": "Apuntes/Intelixencia Artificial/Sistemas de Aprendizaxe Automática/00 - Introducción.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de 01 - Introducción"
+              "title": "Esquema de 00 - Introducción"
             }
           }
         ],
@@ -170,33 +170,33 @@
   },
   "active": "f878e06114f47a09",
   "lastOpenFiles": [
-    "Apuntes/Kubernetes/00 - Cheat Sheet.md",
-    "Apuntes/Programación/Python/01 - Fundamentos/02 - Estructuras de control.md",
-    "Apuntes/Programación/Python/01 - Fundamentos/03 - Tipos estructurados.md",
-    "Apuntes/Intelixencia Artificial/Sistemas de Aprendizaxe Automática/00 - Introducción.md",
-    "Apuntes/Sistemas Operativos/Linux/00 - Cheat Sheet.md",
-    "Apuntes/Sistemas Operativos/Linux/04 - Compresión de ficheros.md",
-    "Apuntes/Sistemas Operativos/Linux/07 - Seguridad.md",
-    "Apuntes/Servicios/Apache/01 - Introducción.md",
-    "Apuntes/Servicios/Bases de datos/MySQL/00 - Cheat sheet.md",
-    "Apuntes/Servicios/Bases de datos/MySQL/01 - Introducción a SQL.md",
-    "Apuntes/Sistemas Operativos/Linux/03 - Scripting con Bash.md",
-    "Apuntes/Servicios/Bases de datos/MySQL/02 - Sentencias básicas SQL.md",
-    "Apuntes/Programación/Python/01 - Fundamentos/04 - Funcións.md",
-    "Apuntes/Programación/Python/01 - Fundamentos/01 - Datos e operadores.md",
-    "Apuntes/Sistemas Operativos/Linux/02 - Sistema de ficheros.md",
-    "Apuntes/Programación/Python/02 - Python para sysadmins.md",
-    "Apuntes/Programación/Python/03 - Programación Orientada a Objetos.md",
     "Apuntes/Servicios/Bases de datos/Mongodb/01 - Introducción.md",
-    "Apuntes/Servicios/Apache/02 - VirtualHost.md",
+    "Apuntes/Programación/Python/01 - Fundamentos/04 - Funcións.md",
     "Sin título.md",
-    "Apuntes/Programación/Python/01 - Fundamentos",
-    "Apuntes/Docker/05 - Networking.md",
-    "Apuntes/Docker/04 - Docker Compose.md",
-    "Apuntes/Docker/02 - Docker Imágenes.md",
     "Apuntes/Programación/Python/05 - Creando paquetes de Python.md",
     "Apuntes/Programación/Python/04 - Pandas.md",
-    "Apuntes/Programación/Go/01 - Introducción a Go.md",
+    "Apuntes/Programación/Python/03 - Programación Orientada a Objetos.md",
+    "Apuntes/Programación/Python/02 - Python para sysadmins.md",
+    "Apuntes/Programación/Python/01 - Fundamentos/03 - Tipos estructurados.md",
+    "Apuntes/Programación/Python/01 - Fundamentos/02 - Estructuras de control.md",
+    "Apuntes/Sistemas Operativos/Linux/00 - Cheat Sheet.md",
+    "Apuntes/Intelixencia Artificial/Sistemas de Aprendizaxe Automática/00 - Introducción.md",
+    "Apuntes/Intelixencia Artificial/Modelos de IA/01 - Tipos de intelixencias artificiais. Escolas e clasificacions.md",
+    "Apuntes/Kubernetes/06 - Webgrafía.md",
+    "Apuntes/Kubernetes/05 - Minikube.md",
+    "Apuntes/Kubernetes/04 - Espacio de nombres.md",
+    "Apuntes/Kubernetes/02 - Instalación.md",
+    "Apuntes/Kubernetes/03 - Deployments.md",
+    "Apuntes/Kubernetes/01 - Introducción.md",
+    "Apuntes/Sistemas Operativos/Linux/07 - Seguridad.md",
+    "Inbox/Preguntas exámen Az104.md",
+    "Inbox/notas auditd.md",
+    "Inbox/leer e tomar notas de esto.md",
+    "Inbox/documentar esto en bash scripts.md",
+    "Apuntes/Sistemas Operativos/Linux/03 - Scripting con Bash.md",
+    "Apuntes/Programación/Python/01 - Fundamentos/01 - Datos e operadores.md",
+    "Apuntes/Kubernetes/00 - Cheat Sheet.md",
+    "Apuntes/Programación/Python/01 - Fundamentos",
     "Clippings",
     "Apuntes/Intelixencia Artificial/Modelos de IA/01 - Tipos de intelixencias artificiais. Escolas e clasificacions.md~",
     "Apuntes/Intelixencia Artificial/Modelos de IA/4913",

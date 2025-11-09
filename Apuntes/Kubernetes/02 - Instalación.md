@@ -138,7 +138,7 @@ kubectl get nodes
 # Actualizar a versión do cluster
 En este ejemplo vamos a ver como se pode actualizar a versión de kubernetes que está a utilziar o noso cluster.
 ## Actualizar o controlador
-Actualizamos kubeadm á version 1.27.2, por exemplo.
+Actualizamos kubeadm á version **1.27.2**, por exemplo.
 ```bash
 sudo apt-get update && \ sudo apt-get install -y --allow-change-held-packages kubeadm=1.27.2-00
 ```

@@ -9,7 +9,7 @@ Se o usuario foi bloqueado mediante sistemas como `faillock`, podemos desbloquea
 sudo faillock --user <nombre_de_usuario> --reset
 ```
 
-> [!NOTE] Nota
+> [!NOTE]- Nota
 > Podemos saber máis da gestión de usuarios no seguinte [[Apuntes/Sistemas Operativos/Linux/01 - Introducción#Gestión de usuarios|enlace]].
 # Sistema de ficheros
 ## Espacio ocupado por carpetas
@@ -38,7 +38,7 @@ Buscar ficheros con regex
 sudo find /var/log/httpd/ -type f -regex ".*\.log$\|.*\.log\.20250523$\|.*2025-04-02\.log$"
 ```
 
-> [!NOTE] Nota
+> [!NOTE]- Nota
 > Podemos saber máis do sistema de ficheros de linux no seguinte [[02 - Sistema de ficheros|enlace]].
 # Redes
 ## Saber ip publica
@@ -71,7 +71,7 @@ aws s3 cp . s3://aws-s3-bucket-uri --recursive --exclude "*" --include "*.zip" -
 
 Podemos eliminar o `--dryrun` se queremos **subilos** de **verdade** ao bucket.
 
-> [!warning] Atención
+> [!warning]- Atención
 > O orden das flags `exclude` e `include` influye no resultado da operación. Se primeiro poñemos o flag `exclude`, excluense todos os ficheros excepto o que poñemos no `include`. Se polo contrario, primeiro poñemos `include` non se enviará ningún fichero xa que ao ir despois o `exclude` tamén se exclue o que incluimos explicitamente.
 # Varios
 ## CheatSheets

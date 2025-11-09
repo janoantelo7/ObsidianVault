@@ -2,7 +2,7 @@
 tags:
   - python/fundamentos
 ---
- As **sentencias de control do flujo de execución** dos nosos programas permiten, baixo determinadas **condicións**, **alterar a execución secuencial** das **instrucións** dos nosos programas.
+As **sentencias de control do flujo de execución** dos nosos programas permiten, baixo determinadas **condicións**, **alterar a execución secuencial** das **instrucións** dos nosos programas.
 
 Python proporciona diversas instruccións para controlar flujo de ejecución:
 - Sentencias condicionales (`if`): Permiten tomar decisións en base aos datos ou resultados de operacións, e en función de estos, executar certas sentencias ou non.
