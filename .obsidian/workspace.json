@@ -4,24 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "e9669347a4720720",
+        "id": "a6f5367f42943063",
         "type": "tabs",
         "children": [
           {
-            "id": "f878e06114f47a09",
+            "id": "31f699bd172ab432",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Apuntes/Sistemas Operativos/Linux/00 - Cheat Sheet.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "00 - Cheat Sheet"
+            }
+          },
+          {
+            "id": "0121dfc31eb83bf6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Apuntes/Intelixencia Artificial/Sistemas de Aprendizaxe Automática/00 - Introducción.md",
+                "file": "Apuntes/Programación/Python/01 - Fundamentos/04 - Funcións.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00 - Introducción"
+              "title": "04 - Funcións"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -141,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Apuntes/Intelixencia Artificial/Sistemas de Aprendizaxe Automática/00 - Introducción.md",
+                "file": "Apuntes/Programación/Python/01 - Fundamentos/04 - Funcións.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de 00 - Introducción"
+              "title": "Esquema de 04 - Funcións"
             }
           }
         ],
@@ -168,34 +185,34 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "f878e06114f47a09",
+  "active": "0121dfc31eb83bf6",
   "lastOpenFiles": [
-    "Apuntes/Servicios/Bases de datos/Mongodb/01 - Introducción.md",
+    "Apuntes/Programación/Python/01 - Fundamentos/01 - Datos e operadores.md",
     "Apuntes/Programación/Python/01 - Fundamentos/04 - Funcións.md",
+    "Apuntes/Programación/Python/04 - Pandas.md",
+    "Apuntes/Programación/Python/02 - Python para sysadmins.md",
+    "Apuntes/Programación/Python/03 - Programación Orientada a Objetos.md",
+    "Apuntes/Sistemas Operativos/Linux/00 - Cheat Sheet.md",
+    "Apuntes/Intelixencia Artificial/Big Data Aplicado/00 - Introducción.md",
+    "Apuntes/Ferramentas Terminal/Tmux.md",
+    "Apuntes/Ferramentas Terminal/Vim.md",
+    "Apuntes/Servicios/Bases de datos/Mongodb/01 - Introducción.md",
+    "Apuntes/Servicios/Bases de datos/MySQL/02 - Sentencias básicas SQL.md",
+    "Apuntes/Servicios/Bases de datos/MySQL/00 - Cheat sheet.md",
+    "Apuntes/Servicios/Bases de datos/MySQL/01 - Introducción a SQL.md",
+    "Apuntes/Programación/Python/01 - Fundamentos/03 - Tipos estructurados.md",
+    "Apuntes/Intelixencia Artificial/Modelos de IA/01 - Tipos de intelixencias artificiais. Escolas e clasificacions.md",
+    "Apuntes/Intelixencia Artificial/Modelos de IA/00 - Introducción.md",
+    "Apuntes/Intelixencia Artificial/Sistemas de Aprendizaxe Automática/00 - Introducción.md",
     "Sin título.md",
     "Apuntes/Programación/Python/05 - Creando paquetes de Python.md",
-    "Apuntes/Programación/Python/04 - Pandas.md",
-    "Apuntes/Programación/Python/03 - Programación Orientada a Objetos.md",
-    "Apuntes/Programación/Python/02 - Python para sysadmins.md",
-    "Apuntes/Programación/Python/01 - Fundamentos/03 - Tipos estructurados.md",
     "Apuntes/Programación/Python/01 - Fundamentos/02 - Estructuras de control.md",
-    "Apuntes/Sistemas Operativos/Linux/00 - Cheat Sheet.md",
-    "Apuntes/Intelixencia Artificial/Sistemas de Aprendizaxe Automática/00 - Introducción.md",
-    "Apuntes/Intelixencia Artificial/Modelos de IA/01 - Tipos de intelixencias artificiais. Escolas e clasificacions.md",
     "Apuntes/Kubernetes/06 - Webgrafía.md",
     "Apuntes/Kubernetes/05 - Minikube.md",
     "Apuntes/Kubernetes/04 - Espacio de nombres.md",
     "Apuntes/Kubernetes/02 - Instalación.md",
     "Apuntes/Kubernetes/03 - Deployments.md",
     "Apuntes/Kubernetes/01 - Introducción.md",
-    "Apuntes/Sistemas Operativos/Linux/07 - Seguridad.md",
-    "Inbox/Preguntas exámen Az104.md",
-    "Inbox/notas auditd.md",
-    "Inbox/leer e tomar notas de esto.md",
-    "Inbox/documentar esto en bash scripts.md",
-    "Apuntes/Sistemas Operativos/Linux/03 - Scripting con Bash.md",
-    "Apuntes/Programación/Python/01 - Fundamentos/01 - Datos e operadores.md",
-    "Apuntes/Kubernetes/00 - Cheat Sheet.md",
     "Apuntes/Programación/Python/01 - Fundamentos",
     "Clippings",
     "Apuntes/Intelixencia Artificial/Modelos de IA/01 - Tipos de intelixencias artificiais. Escolas e clasificacions.md~",

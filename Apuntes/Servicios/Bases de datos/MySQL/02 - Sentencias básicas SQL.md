@@ -1,6 +1,6 @@
 ---
 tags:
-  - mysql
+  - bases_datos/relacionales
 ---
 # Bases de datos
 ## Crear base de datos

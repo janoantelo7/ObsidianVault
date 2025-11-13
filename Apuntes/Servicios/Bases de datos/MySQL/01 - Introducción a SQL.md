@@ -1,6 +1,6 @@
 ---
 tags:
-  - mysql
+  - bases_datos/relacionales
 ---
 # Conceptos
 ## Base de datos

@@ -8,6 +8,7 @@ Empregaremos dúas ferramentas esenciais: `sys.argv` e `argparse`. Estas dúas a
 Podemos utilizar o modulo `sys`, co atributo `argv` para acceder á [[01 - Datos e operadores#Listas|lista]] de argumentos que lle envias ao script. Esta non é a maneira máis robusta de escribir scripts que reciban argumentos pero é bastante sencilla para facelo.
 ### Ejemplo
 O que fai `sys.argv` é gardar en unha lista os parámetros todos que se envian co script, polo tanto podemos xogar con eles ao igual que xogaríamos con calquer outra lista de python.
+
 ```python
 #!/usr/bin/env python
 
@@ -30,6 +31,7 @@ lista sin o nombre do script: ['hola', 'jano', 'que tal']
 ### Ejemplos
 #### Ejemplo 1 - Básico
 Script básico que mostra o funcionamento de argparse, en recibese o nombre de un fichero e recibe como parámetro opcional o número de líneas.
+
 ```python
 #!/usr/bin/env python
 
@@ -61,7 +63,8 @@ Nombre do fichero: hola.txt
 Número de lineas: 10
 ```
 #### Ejemplo 2 - Versionar script
-En este ejemplo vemos como añadir a versión do programa, é un elemento moi frecuente e interesante manter o versionado das nosas ferramentas para que o usuario poida saber se está a utilizar a última versión
+En este ejemplo vemos como añadir a versión do programa, é un elemento moi frecuente e interesante manter o versionado das nosas ferramentas para que o usuario poida saber se está a utilizar a última versión.
+
 ```python
 #!/usr/bin/env python
 
@@ -93,7 +96,8 @@ Salida de execución:
 lector 1.0
 ```
 #### Ejemplo 3 - Descripción Multilínea
-En este ejemplo vemos como podemos crear unha descripción con varias líneas con argparse
+En este ejemplo vemos como podemos crear unha descripción con varias líneas con argparse.
+
 ```python
 #!/usr/bin/env python
 
@@ -167,6 +171,7 @@ options:
 A comprensión de listas en Python é unha maneira concisa e elegante de crear [[01 - Datos e operadores#Listas|listas]]. Permite construír unha lista aplicando unha expresión a cada elemento dunha secuencia (como outra lista, unha cadea de caracteres ou un rango) ou filtrando elementos dunha secuencia utilizando unha condición. Isto reduce a necesidade de escribir bucles explícitos e fai que o código sexa máis claro e conciso.
 ## Ejemplo
 No siguiente ejemplo mostramos como construir unha lista cos números pares en base a unha lista que contén os números do 1 ao 15.
+
 ```python
 #!/usr/bin/env python
 
@@ -187,6 +192,7 @@ DESKTOP-OI7MJLM:poc jano$ ./lector.py
 ```
 
 A compresión de listas permitenos reducir as lineas de código e facer o código moito máis legible que a maneira tradicional de recorrer listas e crear unha nova, como se ve no exemplo inferior.
+
 ```python
 #!/usr/bin/env python
 

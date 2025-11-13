@@ -154,8 +154,77 @@ print("a suma é", sumatorio(1, 2, 3))
 print("a suma é", sumatorio(15, 10, -10, 5))
 ```
 ### `kwargs` (key-word arguments)
-Neste caso, crearase un diccionario do nome `kwargs` e de lonxitude variable que recollerá os parámetros pasados como parexas `nome=valor` (diccionario). Os argumentos pasados na chamada poden ser de calquer tipo.
+Neste caso, crearase un diccionario do nome `kwargs` (pode ser outro nome calquera) e de lonxitude variable que recollerá os parámetros pasados como parexas `nome=valor` (diccionario). Os argumentos pasados na chamada poden ser de calquer tipo.
 
 ```python
+def personas(**kwargs):
+    print("\nDatos recibidos =", kwargs)
 
+    for k, v in kwargs.items():
+        print(f"clave: {k} --> valor: {v}")
+
+personas(nom="pancho", apel="perro")
 ```
+# Python soporta funcións _First Class_
+As funcións en Python son o que se denomina **obxetos de primeira clase**. Esto significa que son manexadas polo linguaxe de forma similar a calquer outro obxeto. É decir, poden ser almacenadas en estructuras de datos, pasadas como argumentos ou usadas en estructuras de control.
+
+Esto concede as funcións de Python unha serie de propiedades como:
+- Son instancias de `Object`
+- Poden ser almacenadas nunha variable
+- Podense pasar como argumento de outra función
+- Poden ser retornadas por unha función
+- Poden almacenarse en estructuras de datos como tablas hash, listas,...
+## As funcións de Python son obxetos
+No seguinte exemplo, asignamos unha función a unha variable. Esta asignación non invoca á función, simplemente almacena na variable a referencia ao obxeto (función) correspondiente.
+
+```python
+def grita(texto):
+    return texto.upper()
+
+# invocación normal da función
+print(grita('Ola!'))
+
+# almacenamos unha referencia á función
+chilla = grita
+
+# invocacmos a función empleando a variable
+print(chilla('Ola!'))
+```
+## As funcións como argumento de outras funcións
+Dado que son obxetos, as funcións poden pasarse como argumento de outras funcións.
+
+```python
+def grita(texto):
+    return texto.upper()
+
+def susurra(texto):
+    return texto.lower()
+
+def saluda(func):
+    saludo = func("Ola, como che vai?")
+    print(saludo)
+
+saluda(grita)
+saluda(susurra)
+```
+## As funcións como retorno de outras funcións
+De forma similar ao que ocurre cos argumentos, ao tratarse as funcións de obxetos, podemos emplealas como retorno dunha función.
+
+```python
+def crea_sumador(x):
+    # definimos unha nova función
+    def sumador(y):
+        return x + y
+
+    return sumador
+
+suma_15 = crea_sumador(15)
+
+print(suma_15(5))
+```
+# Módulos
+A medida que nosos programas vaian credenco e facendose máis complexos, é necesario **dividilos** en diferentes ficheros para facilitar o seu **mantenimiento**. De igual maneira, é probable que as funcións que xa temos implementadas, queiramos **reutilizalas** nalgún outro programa sen ter que "copiar" nel as definicións das mismas.
+
+Python permitenos escribir as definicións das funcións en archivos Python independientes ou **módulos**.
+
+Para poder utilizar en un programa as funcións contidas nun módulo, debemos **importar** dito módulo (ou unha función concreta) desde o noso programa mediante o uso da sentencia `import`.

@@ -1,5 +1,6 @@
 ---
 tags:
+  - bases_datos/NoSQL
 ---
 # Qué é?
 MongoDB é unha base de datos NoSQL orientada a documentos, o que significa que almacena datos en un documentos similares a JSON. É altamente utilizada pola súa capacidade de manexar grandes volúmenes de datos e a súa flexibilidade na estructura de datos.

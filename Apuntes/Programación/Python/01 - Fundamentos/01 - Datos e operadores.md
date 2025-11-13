@@ -165,17 +165,17 @@ print(texto.split(","))
 
 Crear un novo virtual enviroment.
 ```bash
-python3 -m venv <ruta_a_gardalo>/<nombre>
+python3 -m venv <ruta_destino>/<nombre>
 ```
 
 Activar venv en Linux.
 ```bash
-source <ruta_a_gardalo>/<nombre>/bin/activate
+source <ruta_destino>/<nombre>/bin/activate
 ```
 
 Activar venv en Windows.
 ```powershell
-.\<ruta_a_gardalo>\<nombre>\Scripts\Activate.ps1
+.\<ruta_destino>\<nombre>\Scripts\Activate.ps1
 ```
 
 Desactivar un venv.
