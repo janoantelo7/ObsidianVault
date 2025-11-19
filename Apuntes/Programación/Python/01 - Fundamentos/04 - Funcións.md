@@ -228,3 +228,94 @@ A medida que nosos programas vaian credenco e facendose máis complexos, é nece
 Python permitenos escribir as definicións das funcións en archivos Python independientes ou **módulos**.
 
 Para poder utilizar en un programa as funcións contidas nun módulo, debemos **importar** dito módulo (ou unha función concreta) desde o noso programa mediante o uso da sentencia `import`.
+
+Por exemplo, podemos definir un módulo (nun fichero `fibo.py`) cunha función para resolver a serie de Fibonacci.
+
+```python
+def fib(n):
+    """Imprime a serie de Fibonacci."""
+    a, b = 0, 1		# Asignación simultánea de a e b
+    while b < n:
+        print (b, end=' ')
+        a, b = b, a+b
+```
+
+Ahora creamos outro fichero Python no que importaremos o módulo. É importante destacar que o modulo que queremos importar ten que estar na mesma carpeta ou senon teremos que utilizar a función `sys.path.append` para añadir a ubicación do módulo ao _path_.
+
+```python
+# importando o novo módulo
+import fibo
+
+# ahora xa podemos acceder as súas funcións
+num = int(input('Introduce un número enteiro: '))
+
+# Imprime a serie de Fibonacci ata num
+fibo.fib(num)
+```
+
+Con esta sentencia de `import fibo`, faise que o nombre do módulo se importe na tabla de símbolos do programa, de forma que as distintas funcións que contén poden ser accedidas mediante a sintaxis: `nombre_do_módulo.nombre_da_función`.
+
+Temos tamén unha variante que nos permite importar directamente os nombres das funcións á tabla de símbolos. De ese modo podemos invocalas directamente sin ter que antepoñer o nome do módulo: `from nombre_do_módulo import nombre_da_función`.
+
+Ainda que non é aconsellable debido a que podemos ter colisions en nombres das funcións dos distintos módulos, podemos utilizar a siguiente construcción para importar todas as funcións de un módulo: `from nombre_do_módulo import *`.
+
+```python
+# importando o novo módulo
+from fibo import fib
+
+# ahora xa podemos acceder as súas funcións
+num = int(input('Introduce un número enteiro: '))
+
+# Imprime a serie de Fibonacci ata num
+fib(num)
+```
+
+A sintaxis de `import` tamén permite a creación de _alias_ para os nombres (tanto do módulo como das funcións) coa seguinte sintaxis: `import nombre_módulo as alias` para o módulo e `from nombre_módulo import nombre_función as alias_fun` para as funcións.
+
+Unha vez creado un alias, debemos invocar as funcións utilizando este alias.
+
+ ```python
+ # importando o novo módulo
+import fibo as mf
+
+# ahora xa podemos acceder as súas funcións
+num = int(input('Introduce un número enteiro: '))
+
+# Imprime a serie de Fibonacci ata num
+mf.fib(num)
+ ```
+## A variable `__name__`
+Cando o intérprete de Python carga un novo fichero para a súa execución, inicializa a variable `__name__` co seguinte valor:
+- `__main__`: Se o ficheiro se lanzou como un script e é o punto de entrada da aplicación (_main scope_).
+- `nome_módulo`: Se o fichero se importou como módulo
+
+É habitual que os scripts de Python evalúen ao iniciarse esta variable para determinar como foron invocados e actuar en consecuencia. Por exemplo, podríamos añadir o seguinte a un módulo de funcións para executar probas con doctest:
+
+```python
+def fib(n):
+    """Devolve unha lista coa serie de Fibonacci.
+
+    Args:
+      n: número tope da lista.
+
+    Returns:
+      A lista coa secuencia de valores.
+
+    >>> fib(10)
+    [1, 1, 2, 3, 5, 8]
+
+    >>> fib(-5)
+    []
+    """
+    result = []
+    a, b = 0, 1
+    while b < n:
+        result.append(b)
+        a, b = b, a+b
+    return result
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod(verbose=True)
+```
+
