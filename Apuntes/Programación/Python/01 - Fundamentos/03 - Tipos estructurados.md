@@ -157,3 +157,297 @@ As listas poden ser construidas de diferentes maneiras:
 - Usando o constructor `list()` ou `list(iterable)`
 
 Ademáis dos métodos e operacións das secuencias mutables, as listas dispoñen tamén do método `sort()`.
+
+```python
+# crear unha lista vacía
+lista = []
+lista
+```
+
+```python
+# crear a lista cun inicializador
+lista = [1, 2, 3 ,4]
+```
+## Indexado
+Como o resto de secuencias ordenadas, podemos acceder aos elementos da lista mediante un índice ou extraer fragmentos da lista, que á súa vez será outra lista.
+
+```python
+# acceder a un elemento usando o índice (0 para o primeiro)
+lista[3]
+```
+
+```python
+# extraer un fragmento da lista
+lista[2:4]
+```
+
+```python
+# un índice fora do rango generará un erro
+lista[5]
+```
+## Modificación da lista
+### Añadir e modificar elementos
+
+```python
+# crear unha lista por concatenación con outra
+lista_1 = [1, 2]
+lista_2 = lista_1 + [2, 'a', 4]
+```
+
+```python
+# añadir unha lista dentro de unha lista
+lista_2 = []
+lista_2.append(lista_1)
+# añadir elementos sueltos á lista
+lista_2.append("hola")
+lista_2.append(3)
+```
+
+Podemos modificar os elementos:
+
+```python
+lista_2[2] = 999
+lista_2[0][1] = 666
+```
+
+Nunha lista con elementos de diferentes tipos non se poden ordenar co método sort()
+
+```python
+lista = ["a", "ab", "A", "AB", "Z", "Ñ", "1"]
+lista.sort()
+```
+
+É importante recalcar o seguinte, ainda que os métodos `append` e `extend` nos permiten añadir elementos a unha lista fano de diferente maneira:
+- `append`: Añade o elemento suministrado mantendo o seu tipo, ao final da lista.
+- `extend`: Añade de forma **individual** cada un dos elementos do _iterable_ suministrado como argumento.
+
+```python
+lista = [1, 2]
+
+num = 5
+tupla = (3, 4)
+cadena = "hola"
+
+lista.append(num)
+lista.append(tupla)
+lista.append(cadena)
+```
+
+A tupla que engadimos en esta lista conta como un único elemento da mesma:
+
+```python
+len(lista)
+```
+
+Añadir elementos con extend:
+
+```python
+lista = [1, 2]
+
+lista.extend(tupla)
+lista.extend(cadena)
+```
+
+Extend solo funciona con iterables, se intentamos o seguinte vai dar un error:
+
+```python
+lista.extend(num)
+```
+### Eliminar elementos
+
+`del` permite eliminar un elemento polo seu índice:
+
+```python
+del lista[2]
+```
+
+Tamén nos permite eliminar un fragmento completo:
+
+```python
+del lista[6:]
+```
+
+`pop` elimina o último elemento (ou o elemento do índice suministrado) e devolveo:
+
+```python
+elemento_borrado = lista.pop()
+print(lista)
+print(f"elemento borrado: {elemento_borrado}")
+```
+
+Tamén podemos utilizar `remove` que elimina a primeira ocurrencia do valor indicado. Genera un error se no encontra.
+
+```python
+lista = [1, 2, 3, [1, 5]]
+lista[-1].remove(5)
+lista
+```
+## Creación de listas por compresión
+A compresión de listas proporcionanos unha sintaxis reducida de cando queremos crear unha nova lista a partir dos valores de unha colección existente. Por exemplo, supoñamos que dada unha lista de nombres queremos extraer os que empecen pola letra 'A'.
+
+Podríamolo facer cun bucle `for`:
+
+```python
+# Lista de nombres
+nombres = ["Alejandro", "Pancho", "Jano", "Luis", "Cristiano", "Antonio"]
+
+# Extracción de nombres que empezan por A (for)
+nombres_A = []
+for nom in nombres:
+    if nom[0] == 'A':
+        nombres_A.append(nom)
+```
+
+A compresión de listas permitenos facelo nunha única sentencia:
+
+```python
+nombres = ["Alejandro", "Pancho", "Jano", "Luis", "Cristiano", "Antonio"]
+
+nombres_A = [nom for nom in nombres if nom[0] == "A"]
+```
+#### Sintaxis
+A sintaxis máis simple dunha lista de compresión é a seguinte:
+
+```python
+nova_lista = [expresion for item in iterable]
+```
+
+- `item`: É cada un dos elementos do itreable que obtemos en cada iteracción
+- `expresion`: Representa o valor final añadido á lista. Normalmente, será o ítem actual obtido na iteracción ou algunha manipulación sobre o mismo.
+- `iterable`: É calquer obxeto composto por elementos que poidamos recorrer, como unha lista, unha tupla, un conxunto,...
+
+Podemos **filtrar** os elementos que añadimos á lista usando a siguiente sintaxis:
+
+```python
+nova_lista = [expresion for item in iterable if condición(item) == True]
+```
+
+```python
+# Crea unha lista cos números pares entre 0 e 9
+lista = [n for n in range(10) if n%2 == 0]
+```
+
+Tamén se pode, unha vez extraído o elemento da colección desde a que creamos a lista (con ou sin condicional) aplicar unha condición `if-else` sobre o valor antes de engadilo á lista final. A súa sintaxis é a seguinte:
+
+```python
+nova_lista = [expresión_True if condicion_1 else expresión_False for item in iterable]
+```
+
+```python
+nova_lista = [expresión_True if condición_1 else expresión_False for item in iterable if condición_2(item) == True ]
+```
+
+```python
+# Sustituye os números negativos da lista por 0
+nums = [5, -2, 10, 17, -13, 16, 4, -2]
+lista = [n if n>0 else 0 for n in nums]
+```
+
+```python
+# Extrae da lista números no rango [-10,10]. Sustituye os números negativos da lista por 0
+nums = [5, -2, 10, 17, -13, 16, 4, -2]
+lista = [n if n>0 else 0 for n in nums if abs(n)<=10]
+```
+## Converión entre listas e strings
+Podemos facer conversións fácilmente entre listas e cadeas de caracteres mediante a función `list()` e os métodos `split()` e `join()` de strings.
+- `list(s)`:  Crea unha lista a partir dos caracteres individuais do string `s`.
+- `s.split(sep)`: Trocea a cadena `s` en subcadenas utilizando `sep` como separador (espacio se non se indica) e genera unha lista.
+- `s.join(lista)`: Xenera unha cadea de caracteres concatenando os elementos (tipo `str`) de `lista` coa cadea `s`.
+
+```python
+s = "ola,     qué\ttal?"
+list(s)
+```
+
+```python
+# por defecto, usa calquer espacio en blanco como separador
+"ola,     qué\ntal?".split('tal')
+```
+
+```python
+print('\t'.join(["15", "02", "2022"]))
+'\n'.join(["15", "02", "2022"])
+```
+## Ordenación
+Para ordenar unha lista, todos os seus elementos teñen que ser do mesmo tipo e así poder comparalos. Dispoñemos da función `sorted()` e os métodos `sort()` e `reverse()` de `list`:
+- `lista.sort()`: Ordena a `lista` (modificación sobre a lista original)
+- `lista.reverse()`: Invirte o orden da `lista` (modifica sobre a lista original)
+- `sorted(lista)`: Devolve unha nova lista ordenada a partir de `lista` (non modifica a lista original)
+
+```python
+lista = [3, 2, 1, 8, 2]
+print("lista original:", lista)
+print("lista ordenada:", sorted(lista))
+print("lista original:", lista)
+```
+
+```python
+lista = [3, 2, 1, 8, 2]
+print("lista original:", lista)
+lista.sort()
+print("lista original:", lista)
+```
+
+```python
+lista = [3, 2, 1, 8, 2]
+print("lista original:", lista)
+lista.reverse()
+print("lista original:", lista)
+```
+## Mutabilidad e clonado
+As listas son **objetos mutables** e esto pode ter efectos colaterales non deseados cando as utilizamos. As listas implementanse como **objetos en memoria** e as variables de tipo lista conteñen **referencias** que apuntan a ditos objetos.
+
+Cando asignamos unha variable de tipo lista a outra variable, non se realiza unha copia da lista, senon que ambas conteñen a mesma referencia ao mesmo objeto en memoria (son **alias** da mesma lista).
+
+Do anterior se desprende que, se **modificamos** unha das listas anteriores, a outra tamén se verá modificada. En realidade, hai unha única lista á que apuntan ambas variables.
+
+Esto mismo ocurre cando pasamos unha lista como argumento a unha función. Non se pasa unha copia da lista, senon que se pasa unha referencai a mesma.
+
+```python
+x = [1, 2, 1]
+y = x
+x[2] = 3
+
+print("x: ", x)
+print("y: ", y)
+print("id(x): ", id(x))
+print("id(y): ", id(y))
+```
+
+Cando o que queremos é obter unha **copia** dunha lista, podemos facelo de diversas maneiras.
+- mediante un bucle, agregando os elementos a unha nova lista:
+```python
+lista = [1, 2, 3]
+
+copia = []
+for n in lista:
+    copia.append(n)
+
+print("lista:", lista)
+print("copia:", copia)
+print(f"lista id: {id(lista)}; copia id: {id(copia)}")
+```
+
+- Utilizando o método `copy()`:
+
+```python
+lista = [1, 2, 3]
+
+copia = lista.copy()
+
+print("lista:", lista)
+print("copia:", copia)
+print(f"lista id: {id(lista)}; copia id: {id(copia)}")
+```
+
+- Empleando o **operador de indexado**:
+
+```python
+lista = [1, 2, 3]
+
+copia = lista[:]
+
+print("lista:", lista)
+print("copia:", copia)
+print(f"lista id: {id(lista)}; copia id: {id(copia)}")
+```
