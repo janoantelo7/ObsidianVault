@@ -168,7 +168,7 @@ options:
   --version, -v         show program's version number and exit
 ```
 # Compresión de listas
-A comprensión de listas en Python é unha maneira concisa e elegante de crear [[01 - Datos e operadores#Listas|listas]]. Permite construír unha lista aplicando unha expresión a cada elemento dunha secuencia (como outra lista, unha cadea de caracteres ou un rango) ou filtrando elementos dunha secuencia utilizando unha condición. Isto reduce a necesidade de escribir bucles explícitos e fai que o código sexa máis claro e conciso.
+A comprensión de listas en Python é unha maneira concisa e elegante de crear [[01 - Datos e operadores#Listas|listas]]. Permite construír unha lista aplicando unha expresión a cada elemento dunha secuencia (como outra lista, unha cadea de caracteres ou un rango) ou filtrando elementos dunha secuencia utilizando unha condición. Isto reduce a necesidade de escribir bucles explícitos e fai que o código sexa máis **claro** e **conciso**.
 ## Ejemplo
 No siguiente ejemplo mostramos como construir unha lista cos números pares en base a unha lista que contén os números do 1 ao 15.
 

@@ -2,7 +2,7 @@
 tags:
   - big_data
 ---
-_Big Data_ refírese a aqueles conxuntos de datos que, polo seu **gran volume, complexidade e variabilidade**, resultan difíciles de almacenar, procesar e analizar empleando os xestores de bases de datos ou ferramentas tradicionais. Estos datos típicamente cumplen cunha serie de características que comezan todas por V:
+_Big Data_ refírese a aqueles conxuntos de datos que, polo seu **gran volume, complexidade e variabilidade**, resultan difíciles de almacenar, procesar e analizar empleando os xestores de bases de datos ou ferramentas tradicionais. Estos datos típicamente cumplen cunha serie de características que comezan todas por V: ^79b429
 - **Volume**: Facendo referencia á elevada cantidade dos mesmos.
 - **Velocidade**: Pola rapidez coa que se producen e deben ser procesados os datos, xa que poden perder valor ou quedar obsoletos nun curto espazo de tempo.
 - **Variedade**: Pola diversidade de formatos e fontes dos datos, que poden ser estructurados (táboas, rexistros), semiestructurados (JSON, XML) ou non estructurados (texto libre, imaxes, vídeos, sensores, etc.).

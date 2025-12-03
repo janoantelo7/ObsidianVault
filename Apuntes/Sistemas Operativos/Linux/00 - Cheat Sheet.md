@@ -96,6 +96,14 @@ openssl rsa -in key_certificado.key -noout -modulus | openssl md5
 ```
 
 Se esos dous hash que devolven esos comandos coinciden a clave é a de ese certificado.
+
+## Rsync
+Con rsync podemos eliminar os ficheros no destino que non existen no origen.
+```bash
+rsync -av --delete --exclude '.git' /ruta/origen/ /ruta/destino/
+```
+
+Ao utilizar o `exclude` rsync ignora a carpeta `.git` tanto en destino como en origen. Esto podese utilizar tantas veces sexa necesario e tanto con ficheros como con carpetas.
 # WSL
 Podemos instalar a distribución de WSL que queiramos en Windows ejecutando o seguinte comando:
 ```powershell

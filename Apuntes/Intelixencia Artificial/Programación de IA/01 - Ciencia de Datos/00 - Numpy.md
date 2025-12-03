@@ -109,5 +109,3 @@ t = np.empty([4, 2, 3])
 print(f'\nt shape = {t.shape}')
 print(t)
 ```
-
-

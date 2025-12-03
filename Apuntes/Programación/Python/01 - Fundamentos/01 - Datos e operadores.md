@@ -155,30 +155,3 @@ O método `split()` devolvenos unha lista que contén o texto que está entre o 
 texto = "Hola, Mundo!"
 print(texto.split(","))
 ```
-# Pip
-**Pip** é un gestor de paquetes de python. Os comandos que podemos utilizar en pip son os siguientes:
-- **`pip install {package_name}`** : Instalar un paquete.
-- **`pip uninstall {package_name}`**: Desinstalar un paquete.
-- **`pip install --upgrade package_name`**: Actualizar un paquete.
-# Virtualenv
-**Virtualenv** é unha ferramenta de python para crear un sandbox de python e así poder separar os paquetes de python dos paquetes do sistema. É bastante recomendable utilizar esto. Os comandos que podemos utilizar para administrar venvs son os siguientes: 
-
-Crear un novo virtual enviroment.
-```bash
-python3 -m venv <ruta_destino>/<nombre>
-```
-
-Activar venv en Linux.
-```bash
-source <ruta_destino>/<nombre>/bin/activate
-```
-
-Activar venv en Windows.
-```powershell
-.\<ruta_destino>\<nombre>\Scripts\Activate.ps1
-```
-
-Desactivar un venv.
-```bash
-deactivate
-```

@@ -314,7 +314,7 @@ nova_lista = [expresion for item in iterable]
 
 - `item`: É cada un dos elementos do itreable que obtemos en cada iteracción
 - `expresion`: Representa o valor final añadido á lista. Normalmente, será o ítem actual obtido na iteracción ou algunha manipulación sobre o mismo.
-- `iterable`: É calquer obxeto composto por elementos que poidamos recorrer, como unha lista, unha tupla, un conxunto,...
+- `iterable`: É calquer obxecto composto por elementos que poidamos recorrer, como unha lista, unha tupla, un conxunto,...
 
 Podemos **filtrar** os elementos que añadimos á lista usando a siguiente sintaxis:
 
@@ -451,3 +451,243 @@ print("lista:", lista)
 print("copia:", copia)
 print(f"lista id: {id(lista)}; copia id: {id(copia)}")
 ```
+### Shallow vs Deep copy
+Os exemplos de copia de listas vistos son exemplos dos que se denomina **shallow copy** ou **copia superficial**. 
+
+Esto quere decir, que cando creamos unha copia dunha lista estamos creando unha copia superficial do obxecto que é independente do orixinal. Os **obxectos contidos** (os elementos da lista) **non se copian**, senón que o novo obxecto refírese ás **mesmas referencias de memoria** que o orixinal.
+
+A consecuencia de esto é que os cambios feitos nos obxectos mutables internos afectarán tanto ao obxecto orixinal como á copia.
+
+```python
+# creamos unha copia dunha lista
+colores = [['azul', 'verde'], ['rojo', 'naranja']]
+colores_copia = colores[:]
+```
+
+Eliminamos un elemento da lista orixinal:
+
+```python
+del colores[0]
+print(colores)
+print(colores_copia)
+```
+
+En este exemplo a lista copia non se ve modificada. Sen embargo, se eliminamos un elemento da lista copia, tamén se modifica a lista orixinal:
+
+```python
+del colores_copia[1][0]
+print(colores)
+print(colores_copia)
+```
+
+De maneira resumida, se modificamos o nivel superior só afecta á lista que modificamos, se modificamos os obxectos mutables anidados (cambiando un elemento dentro dunha sublista) afectamos a ambas listas porque comparten o mesmo obxecto interno.
+
+Para evitar este comportamento podemos utilizar **Deep Copy**. Este é unha función quen os proporciona Python dentro do módulo `copy`.
+
+```python
+import copy
+
+# creamos unha copia dunha lista
+colores = [['azul', 'verde'], ['rojo', 'naranja']]
+colores_copia = copy.deepcopy(colores)
+colores_copia
+```
+
+Eliminamos un elemento da lista original
+
+```python
+del colores[0]
+print(colores)
+print(colores_copia)
+```
+
+Se eliminamos un elemento da lista contenida na copia nono se modifica la lista original
+
+```python
+del colores_copia[1][0]
+print(colores)
+print(colores_copia)
+```
+# Sets
+Os **sets** ou **conxuntos** son secuencias de elementos que cumplen co seguinte:
+- **Non están ordenados**, é decir, non soportan indexado.
+- Cada elemento é único. **Non se permiten duplicados**.
+- É **mutable**, pero os seus elementos teñen que ser de tipos **inmutables**.
+
+Os seus usos habituales son:
+- Claves de diccionarios
+- Eliminacións de duplicados en coleccións
+- Realización de opreacións de álgebra de conxuntos (unión, intersección, diferencia, complemento,...).
+
+Ao ifual que o resto de coleccións, soporta o operador de pretenencia `in`, a función `len()` e o seu recorrido mediante bucles [[02 - Estructuras de control#Bucle `for-in`|for]].
+
+Os sets podense construir das seguintes maneiras:
+- Utilizando chaves `{}`, separando os elementos con comas: `{1, 2, 3}`
+- Usando o constructor `set()` ou `set(iterable)`
+- Por **compresión**: `{x for x in iterable}`
+
+```python
+var = set([1,2,34])
+```
+
+Máis creación de sets
+
+```python
+set_1 = {1}
+set_2 = {2, 'a', (1, 4), True}
+set_3 = set('ola')
+set_4 = {x**2 for x in [1,2,1,2,1,1,2]}
+
+print("set_1", set_1)
+print("set_2", set_2)
+print("set_3", set_3)
+print("set_4", set_4)
+```
+
+Obter o número de elementos
+
+```python
+len(set_2)
+```
+
+Añadir elementos
+
+```python
+set_1.add(3)
+set_1.add('ola')
+set_1.add(3) # se é repetido (non o añade)
+```
+
+- `pop()` elimina un  elemento arbitrario e devolveo.
+
+```python
+s = {1, 2, 3}
+item = s.pop()
+print(item, s)
+```
+
+- `remove(x)` elimina o elemento _x_ e da error se non o encontra
+
+```python
+s = {1, 2, 3}
+s.remove(2)
+s
+```
+
+- `discard(x)` Elimina o elemento x. Non da error se non o encontra
+
+```python
+s = {1, 2, 3}
+s.discard(5)
+s
+```
+## Álgebra de conxuntos
+| Operación                        | Resultado                                                       |
+| -------------------------------- | --------------------------------------------------------------- |
+| `x1.union(x2,...)`               | Unión dos sets (todos os elementos)                             |
+| `x1.intersection(x2,..)`         | Intersección entre os sets (elementos en común)                 |
+| `x1.difference(x2,...)`          | Elementos de x1 menos os de x2                                  |
+| `x1.symmetric_difference(x2,..)` | Unión dos conxuntos menos a intersección (elementos non comúns) |
+```python
+x1 = {1, 2, 3}
+x2 = {3, 6}
+
+# union de 2 sets, as dúas formas producen a mesma salida
+print(x1 | x2)
+print(x1.union(x2))
+
+# intersección entre os 2 sets, as dúas formas producen a mesma salida
+print(x1 & x2)
+print(x1.intersection(x2))
+
+# diferencia entre 2 sets, as dúas formas producen a mesma salida
+print(x1 - x2)
+print(x1.difference(x2))
+
+# diferencia simetrica entre 2 sets, as dúas formas producen a misma salida
+print(x1 ^ x2)
+print(x1.symmetric_difference(x2))
+```
+# Diccionarios
+Os **diccionarios** son estructuras de datos do tipo **array asociativos**. Consisten en coleccións **non ordenadas** e **mutables** de **pares _clave:valor_**, onde cada clave referencia (indexa) un valor concreto.
+
+O acceso aos diferentes valores almacenados no diccionario realizase a través da clave correspondente. As claves son **únicas** (non pode haber claves duplicadas) e deben ser dun tipo **inmutable** (tipos primitivos, strings, e tuplas, se non conteñen tipos mutables).
+
+Sin embargo, non hai restriccións en canto ao tipo de datos dos valores. Ademáis, distintas claves poden ter valores de diferentes tipos. De igual modo, distintas claves poden ter o mesmo valor asociado.
+
+Podemos construir diccionarios de diferente formas:
+- Usando chaves para denotar un diccionario vacío: `{}`.
+- Usando chaves, separando as parexas _clave:valor_ mediante comas: `{1: 'un', 2: 'dous'}`.
+- Usando o constructor `dict()` ou `dict(iterable de pares)`.
+- Usando **compresión**: `{k:v for k,v in iterable de pares}`.
+
+```python
+d1 = {}
+d2 = {1:'un', 2:'dous', 'a':(1, 2, 3)}
+d3 = dict([('un', 'one'), ('dous', 'two'), ('tres', 'three')])
+d4 = {k:v for k,v in enumerate('ola')}
+
+print(d1, "num elementos:", len(d1))
+print(d2, "num elementos:", len(d2))
+print(d3, "num elementos:", len(d3))
+print(d4, "num elementos:", len(d4))
+```
+
+Se queremos engadir novas parexas _clave:valor_ ao diccionario usamos a sintaxis: `diccionario[clave] = valor`. No caso de que a clave xa exista, modificase o seu valor.
+
+```python
+d = {1: "jano", 2: "pancho"}
+
+d[3] = "ola python"
+```
+
+Para acceder a un elemento utilizamos a seguinte sintaxis:
+
+```python
+print(d[1])
+print(d.get(1))
+```
+
+Para **borrar** unha entrada do diccionario podemos utilizar a función `del d[x]` ou o método `pop(x)`,  donde `x` é unha **clave** do diccionario `d`. Se a clave non existe, producirase unha excepción `KeyError`.
+
+```python
+d = {n:n**2 for n in range(10)}
+print(d)
+
+del d[3]
+
+d.pop(5)
+```
+## Unión de diccionarios
+O método `update()` permite fusionar os contidos de dos diccionarios. Por exemplo, se o diccionario `d1` invoca o método `update()`: `d1.update(d2)` incorporará todas as entradas do diccionario `d2`. Se algunha das claves de `d2` xa se encontra en `d1`, esta vaise actualizar co valor de `d2`.
+
+```python
+d1 = {1:'un', 2:'dous', 3:'tresss'}
+d2 = {4:'catro', 3:'tres'}
+d1.update(d2)
+d1
+```
+## Vistas
+Os métodos `items()`, `keys()` e `values()` proporcionanos obxectos tipo vista moi útiles á hora de recorrer e acceder aos valores dos diccionarios.
+
+- `items()` devolve as parexas _clave:valor_ contidas no diccionario.
+
+```python
+d = {1:'un', 2:'dous', 3:'tres'}
+d.items()
+```
+
+- `keys()` devolve as **claves** contidas no diccionario.
+
+```python
+d = {1:'un', 2:'dous', 3:'tres'}
+d.keys()
+```
+
+- `values()` devolve os **valores** contidos no diccionario.
+
+```python
+d = {1:'un', 2:'dous', 3:'tres'}
+d.values()
+```
+
