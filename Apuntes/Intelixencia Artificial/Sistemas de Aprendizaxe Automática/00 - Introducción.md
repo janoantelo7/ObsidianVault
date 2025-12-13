@@ -15,7 +15,7 @@ O Teorema de Bayes é un sistema matemático que permite calcular a probabilidad
 No machine learning, o Teorema de Bayes, provee un marco probabilístico para o modelado predictivo, donde se busca maximizar a probabilidade de que un modelo se axuste a un conxunto de datos. Este concepto é coñecido como máximo a posteriori (MAP). 
 
 Podemos representar o teorema coa seguinte formula:
-$$P (h | D) = \frac {P (D | h) * P (h)}{P (D)}$$
+$$P (h | D) = \frac {P (D | h) \times P (h)}{P (D)}$$
 ### Algoritmos Naive Bayes
 Os modelos de Naive Bayes son un tipo de algoritmos de aprendizaxe automático basados no teorema de Bayes. Seu nome "naive" (ingenuo) provén da suposición simplificada de que as variables de entrada son independentes entre sí.
 
@@ -40,14 +40,17 @@ Para solucionar o problema empezamos definindo as probabilidades:
 - $P(N|!c)=0,95$ : Probabilidad de test negativo non tendo cáncer.
 
 Ahora unha vez que temos calculados os resultados podemos aplicalos na seguinte formula:
-$$P (c | Pos) = \frac {P (Pos| c) * P (c)}{P (Pos)} = P (c | Pos) = \frac {P (Pos| c) * P (c)}{(P(!c)*P(Pos|!c))+(P(c)*P(Pos|c))} $$
+$$P (c | Pos) = \frac {P (Pos| c) \times P (c)}{P (Pos)} = P (c | Pos) = \frac {P (Pos| c) \times P (c)}{(P(!c)*P(Pos|!c))+(P(c) \times P(Pos|c))} $$
 
 Entonces sustituimos os valores que calculamos ao principio e quedanos a formula seguinte:
-$$P (c | P) = \frac {0,85 0,0002}{(0,9998*0,05)+(0,0002*0,85)} \approx 0.003389$$
+$$P (c | P) = \frac {0,85 \times 0,0002}{(0,9998*0,05)+(0,0002*0,85)} \approx 0.003389$$
 
 > [!Note]- Tutorial de como resolver estos ejercicios.
 > Para solucionar este tipo de problemas é bastante máis sencillo se realizamos un **esquema de árbol** como realiza no seguinte tutorial: [Teorema de Bayes | - YouTube](https://www.youtube.com/watch?v=Fi6G48j0IZ4) 
 ## K Nearest Neighbors (KNN)
 O método **KNN** é un modelo de aprendizaxe automática supervisada que se distingue por ser moi sinxelo pero á vez efectivo. Utilízase comunmente en problemas de **clasificación**.
 
+Estos problemas solucionanse coa formula da distancia euclidea que ven sendo a seguinte:
+$$d = \sqrt{(x_{2} - x_{1})^2 + (y_{2}-y_{1})^2}$$
 
+Esta formula calcularíamola para obter a distancia entre o punto dado e os puntos todos do redor. Unha vez calculemos a distancia con respecto a todos os puntos ordenamolas de menor a maior e xa podemos realizar a clasificación seleccionando os veciños máis cercanos $k$.
