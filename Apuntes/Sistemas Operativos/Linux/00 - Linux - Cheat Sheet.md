@@ -1,6 +1,6 @@
 ---
 tags:
-  - utilidades/linux
+  - cheat_sheet
 ---
 # Usuarios
 ## Desbloquear usuario

@@ -1,6 +1,5 @@
 ---
 tags:
-  - contenedores
   - kubernetes
 ---
 En esta guía recollense os comandos necesarios para poder realizar a instalación de un clúster de  [[Apuntes/Kubernetes/01 - Introducción#Qué é?|Kubernetes]] en Ubuntu.

@@ -1,7 +1,6 @@
 ---
 tags:
-  - linux
-  - troubleshooting
+  - troubleshooting/linux
 ---
 # ping
 `ping` é unha ferramenta critica cando se trata de facer "troubleshooting". Este comando permitenos comprobar a conectividade entre un host e a máquina objetivo.

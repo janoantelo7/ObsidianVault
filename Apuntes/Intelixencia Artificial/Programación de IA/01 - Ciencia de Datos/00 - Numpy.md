@@ -109,3 +109,53 @@ t = np.empty([4, 2, 3])
 print(f'\nt shape = {t.shape}')
 print(t)
 ```
+# Creación e inicialización de Arrays
+`numpy` proporcionanos unha serie de funcións que nos permite crear e inicializar arrays de distintas maneiras. Algunhas son: 
+
+- `array`: Permitenos crear un array a partir dunha lista de valores. Tamén se pode establecer o tipo de dato empleado.
+
+```python
+np.array([1, 2, 3], dtype=np.float32)
+```
+
+- `zeros`: Devolve un array coas dimensións especificadas e inicializado a **ceros**. O tipo por defecto é `float`. (parámetro `dtype`).
+
+```python
+# crea un array de numpy (matriz) de ceros de tamaño 2x3
+np.zeros((2, 3))
+```
+
+- `ones`: Devolve un array coas dimensións especificadas e inicializado en **uns**. O tipo por defecto é `float`.
+
+```python
+np.ones((2, 3))
+```
+
+- `empty`: Devolve un array coas dimensións especificadas sin inicializar. Deberanse asignar os valores posteriormente. É mellor utilizalo con coidado.
+
+```python
+np.empty((2, 3))
+```
+
+- `arange`: Devolve un array de valores nun intervalo, separados de forma uniforme (por defecto, 1). Nel temos que especificar os seguintes valores:
+	- **Inicio**: É un parámetro opcional xa que por defecto é cero.
+	- **Final**: Este non está incluido.
+	- **Paso**: Opcional.
+
+```python
+# creamos un array de valores do 0 ao 7
+np.arange(7)
+
+# creamos un array cos valores de 2 ao 7
+np.arange(2, 7)
+
+# creamos un array cos valores de 2 ao 7 e paso 2
+np.arange(2, 7, 2)
+```
+
+- `linspace`: Crea un array de números do elemento indicado no parámetro **num** uniformemente separados dentro do intervalo.
+
+```python
+np.linspace(0, 7, num=5)
+```
+

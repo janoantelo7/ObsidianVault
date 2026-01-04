@@ -2,7 +2,7 @@
 source: https://packaging.python.org/en/latest/tutorials/packaging-projects/
 tags:
   - clippings
-  - python
+  - python/fundamentos
 ---
 # A simple project
 

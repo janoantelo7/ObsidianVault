@@ -1,6 +1,6 @@
 ---
 tags:
-  - utilidades/mysql
+  - cheat_sheet
 ---
 # Usuarios
 ## Crear usuario

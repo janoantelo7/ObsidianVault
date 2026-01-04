@@ -1,6 +1,5 @@
 ---
 tags:
-  - contenedores
   - kubernetes
 ---
 # Qué é?

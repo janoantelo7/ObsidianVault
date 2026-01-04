@@ -1,6 +1,6 @@
 ---
 tags:
-  - python
+  - python/poo
 ---
 # Introducción
 A Programación Orientada a objetos (POO) é un paradigma de programación introducido nos anos 70 pero popularizado máis tarde. Organiza o código de forma semellante ao humano, empregando clases que agrupan variables (atributos) e funcións (métodos).

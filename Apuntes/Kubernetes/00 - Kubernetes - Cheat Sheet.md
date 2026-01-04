@@ -1,7 +1,6 @@
 ---
 tags:
-  - contenedores
-  - kubernetes
+  - cheat_sheet
 ---
 # Deployments
 ## Desplegar en un namespace

@@ -1,6 +1,6 @@
 ---
 tags:
-  - web_server
+  - apache
 ---
 # Qué é?
 Apache é un dos servicios de servidores web máis utilizados a nivel mundial.

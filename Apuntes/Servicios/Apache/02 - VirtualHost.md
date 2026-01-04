@@ -1,6 +1,6 @@
 ---
 tags:
-  - web_server/vhost
+  - apache/vhost
 ---
 # Introducción
 O término **VirtualHost** refierese a poder executar máis de un sitio web (por exemplo; sitio1.exemplo.com e sitio2.exemplo.com) no mesmo servidor web. Os VirtualHost poden ser **basados en IP** ou **basados por nombre**, esto quere decir que teremos varios sitios webs coa mesma IP.

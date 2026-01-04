@@ -99,7 +99,7 @@ Podemos executar tamén un script cunha versión específica de Python sin ter q
 ```bash
 uv run --python 3.11 script.py
 ```
-# Executar ferramentas globales
+## Executar ferramentas globales
 Se queremos utilizar ferramentas de terminal de Python (como `ruff`), `uv` gestionaas de forma aislada para que non molesten no sistema.
 
 ```bash

@@ -1,6 +1,6 @@
 ---
 tags:
-  - utilidades/docker
+  - cheat_sheet
 ---
 # Contenedores
 Crear e ejecutar un [[Apuntes/Docker/01 - Introducción#Contenedor|contenedor]] con un nombre personalizado.
