@@ -4,41 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "a6f5367f42943063",
+        "id": "fc15a8a60851e4be",
         "type": "tabs",
         "children": [
           {
-            "id": "31f699bd172ab432",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Apuntes/Sistemas Operativos/Linux/00 - Cheat Sheet.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "00 - Cheat Sheet"
-            }
-          },
-          {
-            "id": "d885d40a347c7535",
+            "id": "f04f5f0d967fb425",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Apuntes/Intelixencia Artificial/Programación de IA/01 - Ciencia de Datos/00 - Numpy.md",
+                "file": "Apuntes/Sistemas_e_Infraestructura/Linux/00 - Linux - Cheat Sheet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00 - Numpy"
+              "title": "00 - Linux - Cheat Sheet"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -52,7 +35,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7d1790424c270f02",
+            "id": "eeea595e752e8bd5",
+            "type": "leaf",
+            "state": {
+              "type": "notebook-navigator",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "notebook-navigator"
+            }
+          },
+          {
+            "id": "8fe70e08a50c256d",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -85,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#cheat_sheet  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +90,7 @@
             }
           },
           {
-            "id": "f0262f24914d95c9",
+            "id": "7ff7bdb1d1d30b7e",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -106,11 +99,12 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 348.5
   },
   "right": {
     "id": "6a94678b65f01986",
@@ -159,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Apuntes/Intelixencia Artificial/Programación de IA/01 - Ciencia de Datos/00 - Numpy.md",
+                "file": "Apuntes/Programación/Python/00 - Gestores de paquetes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de 00 - Numpy"
+              "title": "Esquema de 00 - Gestores de paquetes"
             }
           }
         ],
@@ -173,7 +167,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308.5
+    "width": 308.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,45 +181,46 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "d885d40a347c7535",
+  "active": "f04f5f0d967fb425",
   "lastOpenFiles": [
-    "Apuntes/Programación/Python/01 - Fundamentos/04 - Funcións.md",
-    "Apuntes/Programación/Python/01 - Fundamentos/03 - Tipos estructurados.md",
-    "Apuntes/Intelixencia Artificial/Programación de IA/01 - Ciencia de Datos/00 - Numpy.md",
-    "Apuntes/Intelixencia Artificial/Sistemas de Aprendizaxe Automática/00 - Introducción.md",
-    "Apuntes/Intelixencia Artificial/Big Data Aplicado/00 - Introducción/00 - Introducción á Cloud.md",
-    "Apuntes/Intelixencia Artificial/Big Data Aplicado/00 - Introducción/00 - Introducción ao Big Data.md",
-    "Apuntes/Intelixencia Artificial/Big Data Aplicado/00 - Introducción/00 - Introducción as bases de datos NoSQL.md",
-    "Apuntes/Intelixencia Artificial/Modelos de IA/01 - Tipos de intelixencias artificiais. Escolas e clasificacions.md",
-    "Apuntes/Intelixencia Artificial/Modelos de IA/00 - Introducción.md",
-    "Apuntes/Intelixencia Artificial/Programación de IA/01 - Ciencia de Datos",
-    "Apuntes/Intelixencia Artificial/Programación de IA/00 - Ciencia de datos.md",
-    "Apuntes/Programación/Python/01 - Fundamentos/01 - Datos e operadores.md",
-    "Apuntes/Programación/Python/02 - Python para sysadmins.md",
+    "Apuntes/Programación/Python/00 - Gestores de paquetes.md",
+    "Apuntes/Programación/Python/02 - Estructuras de control.md",
+    "Apuntes/Programación/Python/01 - Datos e operadores.md",
     "Apuntes/Programación/Python/03 - Programación Orientada a Objetos.md",
-    "Apuntes/Sistemas Operativos/Linux/00 - Cheat Sheet.md",
-    "Apuntes/Sistemas Operativos/Linux/04 - Compresión de ficheros.md",
-    "Apuntes/Intelixencia Artificial/Big Data Aplicado/00 - Introducción",
-    "Apuntes/Programación/Python/05 - Creando paquetes de Python.md",
-    "Apuntes/Programación/Python/01 - Fundamentos/02 - Estructuras de control.md",
-    "Apuntes/Servicios/Apache/01 - Introducción.md",
-    "Apuntes/Servicios/Apache/02 - VirtualHost.md",
-    "Apuntes/Servicios/Bases de datos/Mongodb/02 - Organización dos datos en MongoDB.md",
-    "Apuntes/Servicios/Bases de datos/Mongodb/01 - Introducción.md",
-    "Sin título.md",
-    "Apuntes/Servicios/Cloud/Azure/02 - Azure Compute Resources/01 - Máquinas Virtuales.md",
-    "Inbox/Viaje Palma Mallorca - Sevilla.md",
-    "Apuntes/Programación/Python/04 - Pandas.md",
+    "Apuntes/Programación/Python/03 - Tipos estructurados.md",
+    "Apuntes/Programación/Python/04 - Funcións.md",
+    "Apuntes/Programación/Python/Creando paquetes de Python.md",
+    "Apuntes/Programación/Python/Python para sysadmins.md",
+    "Apuntes/Sistemas_e_Infraestructura/Linux/03 - Scripting con Bash.md",
+    "Apuntes/Sistemas_e_Infraestructura/Linux/02 - Sistema de ficheros.md",
+    "Apuntes/Sistemas_e_Infraestructura/Linux/01 - Introducción a Linux.md",
+    "Apuntes/Sistemas_e_Infraestructura/Linux/00 - Linux - Cheat Sheet.md",
+    "Apuntes/Sistemas_e_Infraestructura/Ansible/02 - Básico de playbooks.md",
+    "Apuntes/Sistemas_e_Infraestructura/Ansible/00 - Ansible - Introducción.md",
+    "Apuntes/Datos_e_IA/Modelos de IA/01 - Tipos de intelixencias artificiais. Escolas e clasificacions.md",
+    "Apuntes/Datos_e_IA/Modelos de IA/01 - Tipos de algoritmos no aprendizaxe automático.md",
+    "Apuntes/Datos_e_IA/Modelos de IA/00 - Introducción ao Machine Learning.md",
+    "Apuntes/Datos_e_IA/Modelos de IA/00 - Introducción á IA.md",
+    "Apuntes/Datos_e_IA/Ciencia_de_Datos/Introducción ao Big Data.md",
+    "Apuntes/Datos_e_IA/Ciencia_de_Datos/Almacenamiento de datos para análisis.md",
+    "Apuntes/Datos_e_IA/Ciencia_de_Datos/Introducción á Cloud.md",
+    "Apuntes/Sistemas_e_Infraestructura/Ansible/03 - Traballando con varios servidores.md",
+    "Apuntes/Sistemas_e_Infraestructura/Contenedores/Docker/00 - Docker - Cheat Sheet.md",
+    "Apuntes/Sistemas_e_Infraestructura/Sin título.md",
+    "Apuntes/Sistemas_e_Infraestructura/Contenedores/Kubernetes/00 - Kubernetes - Cheat Sheet.md",
+    "Apuntes/Datos_e_IA/Bases de datos/Mongodb/02 - Organización dos datos en MongoDB.md",
+    "Apuntes/Sistemas_e_Infraestructura/Contenedores",
+    "Apuntes/Datos_e_IA/Ciencia_de_Datos",
+    "Sin título.base",
+    "Apuntes/Programación/Python/01 - Fundamentos/03 - Tipos estructurados",
+    "Apuntes/Intelixencia Artificial/Programación de IA/01 - Ciencia de Datos",
+    "Apuntes/Datos_e_IA/Big Data Aplicado/00 - Introducción",
     "Apuntes/Programación/Python/01 - Fundamentos",
     "Clippings",
     "Apuntes/Intelixencia Artificial/Modelos de IA/01 - Tipos de intelixencias artificiais. Escolas e clasificacions.md~",
     "Apuntes/Intelixencia Artificial/Modelos de IA/4913",
-    "Apuntes/Servicios/Cloud/Azure/01 - Administración de Azure",
-    "Apuntes/Servicios/Cloud/Azure/02 - Azure Compute Resources",
     "Apuntes/Kubernetes/adjuntos/Pasted image 20250925195806.png",
-    "Apuntes/Kubernetes/adjuntos",
     "Apuntes/00-Recursos/Pasted image 20240820095308.png",
-    "Apuntes/00-Recursos",
     "Apuntes/Inteligencia Artificial/Sistemas de Aprendizaje Automática/adjuntos/Pasted image 20250919232610.png",
     "Apuntes/Inteligencia Artificial/Sistemas de Aprendizaje Automática/adjuntos/Pasted image 20250919233643.png",
     "Sin título.canvas",

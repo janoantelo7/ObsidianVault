@@ -1,6 +1,6 @@
 ---
 tags:
-  - utilidades/openldap
+  - openldap
 ---
 Á hora de traballar con usuarios e grupos en [[Apuntes/Servicios/OpenLDAP/01 - Introducción#Qué é?|OpenLDAP]] utilizaremos os ficheros [[Apuntes/Servicios/OpenLDAP/01 - Introducción#Ficheros LDIF|ldif]] para crear os nosos obxectos. Definiremos un elemento por fichero, pero podemos definir cantos queiramos. Por exemplo, no fichero das unidades organizativas podríamos definir vairas.
 # Unidades Organizativas

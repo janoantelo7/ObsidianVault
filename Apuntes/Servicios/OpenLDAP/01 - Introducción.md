@@ -38,7 +38,7 @@ Os ficheros LDIF (LDAP Data Interchange Format) son uns ficheros en texto plano 
 | **Configuración** | Carganse dinámicamente e teñen o seu propio apartado                                    | Carganse sobre a configuración do sistema                      | Configuranse encima de unha base de datos existente |
 | **Impacto**       | Añaden funcionalidades ao servidor                                                      | Definen como se organizan os datos                             | Modifican o comportamento da base de datos          |
 # Instalación
-No seguinte apartado vamos a explicar como instalar OpenLDAP en un servidor [[Apuntes/Sistemas Operativos/Linux/01 - Introducción#Instalar paquetes|Centos]] ou RHEL. O primeiro paso que temos que facer é habilitar o paquete EPEL co seguinte comando.
+No seguinte apartado vamos a explicar como instalar OpenLDAP en un servidor [[01 - Introducción a Linux#Instalar paquetes|Centos]] ou RHEL. O primeiro paso que temos que facer é habilitar o paquete EPEL co seguinte comando.
 ```bash
 dnf install epel-release epel-next-release
 ```
