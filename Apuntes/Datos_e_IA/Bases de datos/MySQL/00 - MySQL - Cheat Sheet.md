@@ -44,6 +44,10 @@ ALTER USER 'user'@'hostname' IDENTIFIED BY 'newPass';
 ```mysql
 GRANT SELECT, INSERT, UPDATE, DELETE, CREATE ON *.* TO 'user'@'%' IDENTIFIED BY 'pwd-user';
 ```
+## Read Only
+```sql
+GRANT SELECT ON {database}.* TO 'readonly_user'@'localhost';
+```
 ## Ver todos os usuarios
 ```mysql
 SELECT User, Host FROM mysql.user ORDER BY User;
@@ -73,6 +77,11 @@ zcat /path/file.sql.gz | mysql -u {username} -p {dbname}
 ## Exportar tabla
 ```shell
 mysqldump -u {username} -p {dbname} {table_name} | gzip > {outputfile}_$(date +"%Y%m%d").sql.gz
+```
+
+Exportar a tabla con clausula **where**:
+```shell
+mysqldump -u {username} -p {dbname} {table_name} --where="created_date < '2025-03-11'" | gzip > {outputfile}_$(date +"%Y%m%d").sql.gz
 ```
 ## Importar tabla
 ```shell

@@ -27,3 +27,36 @@ As opcións das que dispoñemos son:
 - **g:** Remplaza todas as ocurrencias que aparezcan por línea. Se non se añade esto solo o fará para a primeira que aparezca
 - **i:** Non distingue entre mayúsculas e minúsculas
 - **l:** diferencia entre mayúsculas e minúsculas
+
+# Gestión de plugins con Neovim
+En este apartado cubro o sistema nativo de plugins de Neovim introducido en Neovim 0.12.
+## Instalación de plugins
+Para instalar un plugin, debemos añadir o seguinte no ficheiro de configuración de neovim. Normalmente está situado en `~/.config/nvim/init.lua`.
+```vim
+vim.pack.add({ source = 'url_repositorio_git' })
+```
+
+Despois podemos reiniciar neovim ou lanzar o seguinte comando para comezar coa instalación:
+```vim
+:lua vim.pack.update()
+```
+## Listar plugins instalados
+```vim
+:lua print(vim.inspect(vim.pack.get()))
+```
+
+De maneira máis visual:
+```vim
+:lua vim.pack.update(nil, { offline = true })
+```
+
+## Borrado de plugins
+Para borrar un en específico
+```vim
+:lua vim.pack.del({'nombre-plugin'})
+```
+
+Se en cambio queremos borrar todos os que non se están usando:
+```vim
+:lua local inactive = vim.iter(vim.pack.get()):filter(function(x) return not x.active end):map(function(x) return x.spec.name end):totable(); vim.pack.del(inactive)
+```
